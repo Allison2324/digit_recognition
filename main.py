@@ -1,5 +1,6 @@
 from model import *
 from PIL import Image
+import matplotlib.pyplot as plt
 from dataset import Dataset
 
 
@@ -12,8 +13,8 @@ def plot_digit(x_set, y_set, idx):
 
 if __name__ == "__main__":
     dataset = Dataset("dataset/train.csv")
-    model = Model(dataset, "1", 5000, 0.001, 0.9)
+    model = Model(dataset, "2", 6000, 0.001, 0.9)
     model.train()
     model.predict()
     model.save_model()
-    print("Work finished!")
+    print("\nWork finished!")

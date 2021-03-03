@@ -1,12 +1,6 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import torch
-import torchvision
-
 from time import time
 from torch import nn, optim
-from dataset import Dataset
 
 
 class Model:
